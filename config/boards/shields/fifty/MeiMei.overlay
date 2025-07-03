@@ -33,7 +33,7 @@
               <&gpio0 15 GPIO_ACTIVE_HIGH>, // Row 3
               <&gpio0 16 GPIO_ACTIVE_HIGH>, // Row 4
               <&gpio0 17 GPIO_ACTIVE_HIGH>, // Row 5
-              <&gpio0 25 GPIO_ACTIVE_HIGH>; // Row 6
+              <&gpio0 25 GPIO_ACTIVE_HIGH> // Row 6
             ;
     };
 
