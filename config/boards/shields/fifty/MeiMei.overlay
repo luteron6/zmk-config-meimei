@@ -1,4 +1,5 @@
-#include <dt-bindings/zmk/matrix_transform.h> // Put this with the other includes at the top of your overlay
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/gpio/gpio.h>
 
 / {
     chosen {
@@ -11,28 +12,28 @@
         wakeup-source;
 
         col-gpios
-            = <&pro_micro 1 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 0 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 2 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 3 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 4 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 5 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 6 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 7 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 8 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 9 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 10 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 16 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 14 GPIO_ACTIVE_HIGH>
+            = <&gpio0 1 GPIO_ACTIVE_LOW>,  // Col 1
+              <&gpio0 0 GPIO_ACTIVE_LOW>,  // Col 2
+              <&gpio0 2 GPIO_ACTIVE_LOW>,  // Col 3
+              <&gpio0 3 GPIO_ACTIVE_LOW>,  // Col 4
+              <&gpio0 4 GPIO_ACTIVE_LOW>,  // Col 5
+              <&gpio0 5 GPIO_ACTIVE_LOW>,  // Col 6
+              <&gpio0 6 GPIO_ACTIVE_LOW>,  // Col 7
+              <&gpio0 7 GPIO_ACTIVE_LOW>,  // Col 8
+              <&gpio0 8 GPIO_ACTIVE_LOW>,  // Col 9
+              <&gpio0 9 GPIO_ACTIVE_LOW>,  // Col 10
+              <&gpio0 11 GPIO_ACTIVE_LOW>, // Col 11
+              <&gpio0 10 GPIO_ACTIVE_LOW>, // Col 12
+              <&gpio0 12 GPIO_ACTIVE_LOW>  // Col 13
             ;
 
         row-gpios
-            = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 13 GPIO_ACTIVE_HIGH>, // Row 1
+              <&gpio0 14 GPIO_ACTIVE_HIGH>, // Row 2
+              <&gpio0 15 GPIO_ACTIVE_HIGH>, // Row 3
+              <&gpio0 16 GPIO_ACTIVE_HIGH>, // Row 4
+              <&gpio0 17 GPIO_ACTIVE_HIGH>, // Row 5
+              <&gpio0 25 GPIO_ACTIVE_HIGH>; // Row 6
             ;
     };
 
