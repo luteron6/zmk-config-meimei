@@ -12,7 +12,7 @@
                 &kp TILDE &kp 1     &kp 2     &kp 3     &kp 4     &kp 5    &kp 6     &kp 7     &kp 8     &kp 9     &kp 0     &kp MINUS &kp EQUAL &kp BACKSPACE
                 &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T    &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp BACKSLASH
                 &kp CAPS  &kp A     &kp S     &kp D     &kp F     &kp G    &kp H     &kp J     &kp K     &kp L     &kp SEMICOLON &kp QUOTE &kp ENTER
-                &kp LEFT_SHIFT &kp Z &kp X    &kp C     &kp V     &kp B    &kp N     &kp M     &kp COMMA  &kp PERIOD  &kp SLASH  &RIGHT_SHIFT
+                &kp LEFT_SHIFT &kp Z &kp X    &kp C     &kp V     &kp B    &kp N     &kp M     &kp COMMA  &kp PERIOD  &kp SLASH  &kp RIGHT_SHIFT
                 &kp LCTRL &kp LGUI  &kp LALT  &kp SPACE                     &kp RALT &kp RGUI &mo 1 &kp RCTRL
             >;
         };
