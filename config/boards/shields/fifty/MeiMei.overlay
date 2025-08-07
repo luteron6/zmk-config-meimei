@@ -18,7 +18,7 @@
               <&gpio0 20 GPIO_ACTIVE_LOW>,  // Col 4
               <&gpio0 22 GPIO_ACTIVE_LOW>,  // Col 5
               <&gpio0 24 GPIO_ACTIVE_LOW>,  // Col 6
-              <&gpio0 0 GPIO_ACTIVE_LOW>,  // Col 7
+              <&gpio1 0 GPIO_ACTIVE_LOW>,  // Col 7
               <&gpio0 11 GPIO_ACTIVE_LOW>,  // Col 8
               <&gpio1 4 GPIO_ACTIVE_LOW>,  // Col 9
               <&gpio1 6 GPIO_ACTIVE_LOW>,  // Col 10
