@@ -15,6 +15,8 @@
                 &kp LSHFT &kp Z &kp X    &kp C     &kp V     &kp B    &kp N     &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
                 &kp LCTRL &kp LGUI  &kp LALT  &kp SPACE                     &kp RALT &kp RGUI &mo 1 &kp RCTRL
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
 
         function_layer { // Layer 1
@@ -26,6 +28,11 @@
                 &trans   &trans   &trans   &trans   &trans   &trans   &trans    &trans   &trans   &trans   &trans   &trans
                 &trans   &trans   &trans   &trans   &trans   &trans   &trans    &trans
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
     };
  };
+
+
+
