@@ -5,10 +5,3 @@ config ZMK_KEYBOARD_NAME
     default "MeiMei"
 
 endif
-
-# Enable encoder
-CONFIG_EC11=y
-config_EC11_TRIGGER_GLOBAL_THREAD=y
-
-# Enable sleep
-CONFIG_ZMK_SLEEP=Y
