@@ -39,6 +39,9 @@
               <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // Row 5
               <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 6
             ;
+        &left_encoder {
+            status = "okay";
+        };
     };
 
     default_transform: keymap_transform0 {
@@ -66,7 +69,4 @@
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
-
-
-
 };
