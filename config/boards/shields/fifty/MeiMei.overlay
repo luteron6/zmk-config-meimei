@@ -7,7 +7,6 @@
         zmk,matrix_transform = &default_transform;
         zmk,left_encoder = &left_encoder;
         zmk,keymap-sensors = &sensors;
-
     };
 
 // Matrix setup
