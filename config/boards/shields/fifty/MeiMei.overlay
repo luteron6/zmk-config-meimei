@@ -39,9 +39,6 @@
               <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // Row 5
               <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 6
             ;
-        &left_encoder {
-            status = "okay";
-        };
     };
 
     default_transform: keymap_transform0 {
@@ -57,6 +54,7 @@
             RC(5,0) RC(5,1) RC(5,2) RC(5,3)                                 RC(5,7) RC(5,8) RC(5,9) RC(5,10)
         >;
     };
+
     left_encoder: encoder_left {
         compatible = "alps,ec11";
         a-gpios = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -64,9 +62,14 @@
         steps = <60>;
         status = "disabled";
     };
+
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
+};
+
+&left_encoder {
+    status = "okay";
 };
