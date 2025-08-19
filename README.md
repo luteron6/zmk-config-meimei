@@ -12,4 +12,6 @@ See the [Github Actions](https://github.com/luteron6/zmk-config-meimei/actions) 
 
 [#36](https://github.com/luteron6/zmk-config-meimei/actions/runs/16839499498): Encoder finally works; this is the first fully functional build.
 
-#37 Changed the Bluetooth-broadcasted name for fun.
+[#37](https://github.com/luteron6/zmk-config-meimei/actions/runs/16840559364): Changed the Bluetooth-broadcasted name for fun.
+
+#38: Changed keymap
