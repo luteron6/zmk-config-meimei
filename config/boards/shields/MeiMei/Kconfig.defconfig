@@ -2,7 +2,6 @@ if SHIELD_MEIMEI
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "RunHimByMe1st:)"
-#    default "MeiMei"
+    default "MeiMei"
 
 endif
